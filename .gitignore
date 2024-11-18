@@ -35,3 +35,42 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# Java 및 Gradle 관련
+*.log
+*.class
+.gradle/
+target/
+*.jar
+
+# IDE 관련
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+*.sublime-workspace
+*.sublime-project
+
+# OS 관련
+Thumbs.db
+.DS_Store
+ehthumbs.db
+
+# NetBeans 관련
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code 관련
+.vscode/
