@@ -15,6 +15,7 @@ public class QuizController {
 
     @Autowired
     private QuizService quizService;
+
     @Autowired
     private QuizAttemptService quizAttemptService;
 
@@ -40,6 +41,12 @@ public class QuizController {
     @PostMapping("/{quizId}/attempt")
     public int attemptQuiz(@PathVariable Long quizId, @RequestParam Long userId, @RequestParam boolean isCorrect) {
         return quizAttemptService.recordAttempt(quizId, userId, isCorrect);
+    }
+
+    // 퀴즈 수정
+    @PutMapping("/{id}")
+    public void updateQuiz(@PathVariable Long id, @RequestBody Quiz updatedQuiz) {
+        quizService.updateQuiz(id, updatedQuiz); // 퀴즈 서비스에서 수정된 퀴즈를 처리
     }
 
     // 퀴즈 삭제
