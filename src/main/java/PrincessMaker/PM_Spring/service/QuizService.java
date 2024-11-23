@@ -1,12 +1,11 @@
 package PrincessMaker.PM_Spring.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import PrincessMaker.PM_Spring.model.Quiz;
+import PrincessMaker.PM_Spring.entity.Quiz;
 import PrincessMaker.PM_Spring.repository.QuizRepository;
 import java.util.List;
 import java.util.Optional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 @Service
 public class QuizService {
