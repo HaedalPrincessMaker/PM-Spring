@@ -1,10 +1,9 @@
 package PrincessMaker.PM_Spring.service;
 
+import PrincessMaker.PM_Spring.entity.QuizAttempt;
+import PrincessMaker.PM_Spring.repository.QuizAttemptRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import PrincessMaker.PM_Spring.model.QuizAttempt;
-import PrincessMaker.PM_Spring.repository.QuizAttemptRepository;
 
 @Service
 public class QuizAttemptService {
@@ -15,8 +14,8 @@ public class QuizAttemptService {
     /**
      * 퀴즈 시도를 기록하고, 해당 퀴즈의 총 시도 횟수를 반환합니다.
      *
-     * @param quizId 퀴즈 ID
-     * @param userId 사용자 ID
+     * @param quizId    퀴즈 ID
+     * @param userId    사용자 ID
      * @param isCorrect 정답 여부
      * @return 해당 퀴즈의 총 시도 횟수
      */
