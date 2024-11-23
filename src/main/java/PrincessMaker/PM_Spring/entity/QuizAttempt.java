@@ -1,6 +1,10 @@
-package PrincessMaker.PM_Spring.model;
+package PrincessMaker.PM_Spring.entity;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.Getter;
 
 @Entity
@@ -24,7 +28,8 @@ public class QuizAttempt {
     private boolean isCorrect;  // 정답 여부
 
     // 기본 생성자
-    public QuizAttempt() {}
+    public QuizAttempt() {
+    }
 
     public void setId(Long id) {
         this.id = id;
